@@ -1,0 +1,36 @@
+{
+  "name": "status",
+  "version": "1.0.0",
+  "description": "Update your slack status from the command line.",
+  "main": "program.js",
+  "bin": {
+    "status": "./program.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "slack",
+    "javascript",
+    "cli-app",
+    "cli",
+    "nodejs",
+    "node-js",
+    "status",
+    "slack-api"
+  ],
+  "author": "Abbey Mondshein",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/events-api": "^3.0.0",
+    "@slack/web-api": "^6.1.0",
+    "chalk": "^4.1.0",
+    "commander": "^7.2.0",
+    "dotenv": "^8.2.0",
+    "ora": "^5.4.0"
+  }
+}
