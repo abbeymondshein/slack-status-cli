@@ -26,7 +26,7 @@ program
 
 const { args } = program;
 const opts = program.opts();
-const { minutes, current, headsdown, clear, wake, snooze } = opts;
+const { current, headsdown, clear, wake, snooze } = opts;
 
 if (current) {
   checkCurrentStatus();
@@ -34,9 +34,9 @@ if (current) {
   setCurrentStatus({
     status_text: "heads down",
     status_emoji: ":heads-down:",
-    status_expiration: args.length >= 1 ? formatStatusExpiration(args[0]) : 0,
+    status_expiration: args.length < 1 ? 0 : formatStatusExpiration(args[0]),
   });
-  setDND(minutes && args[0]);
+  setDND(args.length < 1 ? 30 : args[0]);
 } else if (clear) {
   clearCurrentStatus();
 } else if (snooze) {
