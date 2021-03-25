@@ -16,7 +16,7 @@ Inside your chosen terminal app (I recommend [hyper](https://hyper.is/)), clone 
 
 ### Setup
 
-Once you've cloned the repository, navigate to the folder using the command `cd status-cli`. Once there, you can install status globally with the following command:
+Once you've cloned the repository, navigate to the folder using the command `cd slack-status-cli`. Once there, you can install status globally with the following command:
 
 ```shell
 $ npm install -g .
@@ -24,7 +24,7 @@ $ npm install -g .
 
 ### Interface
 
-Once you've installed it globally, you're ready to go! To easily get started, just enter `status`. Entering `status -h` will pull up a full list of the available commands and actions.
+Once you've installed it globally, you're ready to go! Entering `status -h` will pull up a full list of the available commands and actions.
 
 #### Available Commands
 
