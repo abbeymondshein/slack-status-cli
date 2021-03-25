@@ -59,3 +59,14 @@ The following commands can be used following the `status` keyword to update your
 | `-dnd`,`--snooze`              | Snooze / Do not disturb. Enter amount of minutes to snooze or will default to 30min                                                                          | `status -dnd 45`   |
 | `-w` ,`--wake`                 | Wake - End snooze / Do not disturb.                                                                                                                          | `status -w`        |
 | `-m`,`--minutes`               | Minutes to pass to another command.                                                                                                                          | `status -dnd -m 2` |
+
+### Contribution
+
+Feel free to open a PR or Issue with suggestions / improvements!
+
+Upcoming enhancement concepts:
+
+- complete status update ( emoji, status, duration, DND duration)
+- emoji autocompletion
+- extended status durations (days)
+- ✨ interface refinement ✨
