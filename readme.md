@@ -22,6 +22,26 @@ Once you've cloned the repository, navigate to the folder using the command `cd 
 $ npm install -g .
 ```
 
+### Slack App Setup
+
+1. On `https://api.slack.com/apps` click `Create New App`.
+2. Give your app a name, select your workspace & `Create App`.
+3. Navigate to the `Oauth & Permissions` page and in the `User Token Scopes` section, authorize your app for the following scopes:
+   - dnd:read
+   - dnd:write
+   - users.profile:read
+   - users.profile:write
+4. Scroll up to the top of the page and hit `Install to Workspace`.
+5. Once the app is installed, the page will have a section called `OAuth Tokens for Your Team`. Copy the value following `User OAuth Token`. This generally starts with something like `xoxb-`. You will need this token for the next step: setting up your environment variables.
+
+### Environment Variables
+
+Create a copy of the `.env.sample` file and name it `.env`. Make sure to update it with your slack token from the previous step.
+
+```
+SLACK_TOKEN = xoxp-therestofyourtoken12328320940923849238
+```
+
 ### Interface
 
 Once you've installed it globally, you're ready to go! Entering `status -h` will pull up a full list of the available commands and actions.
